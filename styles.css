@@ -90,6 +90,8 @@ nav {
     box-sizing: border-box;
     border-width: 0px;
     border-style: solid;
+    justify-content: space-between;
+    align-items: center;
 }
 
 
@@ -98,6 +100,9 @@ nav {
     flex: 1 1 0%;
     align-items: center;
     justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .logo {
@@ -220,7 +225,7 @@ HEADER / ABOUT US ↓
 .row {
     margin-left: auto;
     margin-right: auto;
-    max-width: 1280px;;
+    max-width: 1200px;;
     padding-top: 1.25rem;
     padding-bottom: 1.25rem;
     width: 100%;
@@ -228,6 +233,7 @@ HEADER / ABOUT US ↓
 
 .header {
     font-weight: 700;
+    font-size: 48px;
     line-height: 1.25;
     color: rgb(26, 32, 44);
     flex-direction: column;
@@ -237,7 +243,7 @@ HEADER / ABOUT US ↓
 .para {
     margin-top: 1.25rem;
     margin-bottom: 1.25rem;
-    font-size: 1rem;
+    font-size: 1.15rem;
     display: flex;
     flex-direction: column;
     width: 40%;
@@ -304,15 +310,12 @@ HEADER / ABOUT US ↓
 }
 
 .templates__illustration img {
-    width: 100%;
-    max-width: 32rem;
-    min-width: 0px;
-    height: auto;
+    width: 60%;
+    max-width: 48rem;
     margin-top: 1.25rem;
-    vertical-align: middle;
     position: absolute;
-    flex-direction: column;
-    margin-bottom: 20%;
+    margin-bottom: 28%;
+    margin-right: 5%;
 }
 
 
@@ -332,11 +335,12 @@ FEATURES ↓
     padding: 80px 0;
 }
 
-#features .row__narrow {
+.row__narrow {
    margin-left: auto;
    margin-right: auto;
    display: flex;
-   max-width: 1024px;
+   max-width: 1200px;
+   width: 100%;
    flex-flow: column wrap;
    align-items: center;
    padding-top: 5rem;
@@ -345,7 +349,7 @@ FEATURES ↓
 
 .features__heading {
     margin-bottom: 1rem;
-    font-weight: 700;
+    font-weight: 500;
     font-size: 20px;
 }
 
@@ -371,7 +375,9 @@ FEATURES ↓
 .features__cards {
    display: flex;
    flex-wrap: wrap;
-    
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
 }
 
 .features__card {
@@ -482,18 +488,15 @@ QUALITY WORK ↓
 }
 
 .quality__img {
-    width: 100%;
-    max-width: 32rem;
-    min-width: 0px;
-    height: auto;
-    vertical-align: middle;
-    margin-left: 50%;
-    flex-direction: column;
-    margin-bottom: 50px;
+    width: 50%;
+    max-width: 42rem;
+    margin-left: 40%;
     position: absolute;
     margin-top: -28%;
     border-radius: 0.25rem;
     border-width: 1px;
+    border-style: solid;
+    border-color: rgb(226, 232, 240);
 }
 
 
@@ -574,7 +577,7 @@ STEPS ↓
     display: flex;
     flex-direction: column;
     margin-top: 0px;
-    margin-left: 1.5rem;
+    margin-left: 1.6rem;
 }
 
 .step__heading {
@@ -585,7 +588,6 @@ STEPS ↓
 
 .step__description {
     margin-top: 0.75rem;
-    max-width: 20rem;
     font-size: 0.875rem;
     font-weight: 500;
     line-height: 2;
@@ -600,9 +602,134 @@ VALUES ↓
 
 #values .row {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    flex-direction: column;
+    
 }
+
+.values__header {
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.values__title {
+    margin-top: 1rem;
+    text-align: left;
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 1.25;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.values__info {
+    margin-top: 1rem;
+    text-align: left;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.625;
+    color: rgb(124, 139, 161);
+    width: 40%;
+}
+
+.values__features {
+    margin-right: auto;
+    display: flex;
+    max-width: 1200px;
+    width: 28%;
+}
+
+.affordable {
+    margin-top: 2.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.afford__icon {
+    background-color: rgb(154, 230, 180);
+    color: rgb(39 103 73);
+    border-radius: 50%;
+    padding: 0.4rem;
+}
+
+.afford__title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    display: flex;
+    margin-left: 28%;
+    margin-top: -16%;
+}
+
+.affordable__info {
+    margin-top: 1.25rem;
+    text-align: center;
+    line-height: 1.225;
+    color: rgb(113, 128, 150);
+    display: flex;
+    margin-left: 20;
+    width: 200px;
+    text-align: left;
+}
+
+.professionalism {
+    margin-top: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20%;
+}
+
+.profess__icon {
+    background-color: rgb(254, 178, 178);
+    color: rgb(155, 44, 44);
+    border-radius: 50%;
+    padding: 0.4rem;
+    display: flex;
+}
+
+.profess__title {
+    margin-left: 28%;
+    margin-top: -16%;
+    font-size: 1.25rem;
+    font-weight: 700;
+    display: flex;
+    position: relative;
+}
+
+.profess__info {
+    margin-top: 1.25rem;
+    text-align: center;
+    line-height: 1.225;
+    color: rgb(113, 128, 150);
+    display: flex;
+    flex-direction: row;
+    width: 180px;
+    text-align: left;
+}
+
+.values__img {
+   width: 60%;
+   margin-left: 48%;
+   margin-top: -42%;
+}
+
+.learn__more {
+    margin-top: 2rem;
+    margin-left: 0px;
+    margin-right: 0px;
+    border-radius: 9999px;
+    --tw-bg-opacity: 1;
+    background-color: rgb(100 21 255 / var(--tw-bg-opacity));
+    padding: 0.75rem 2rem;
+    font-weight: 700;
+    --tw-text-opacity: 1;
+    color: rgb(247 250 252 / var(--tw-text-opacity));
+    transition-duration: 300ms ease;
+    border-style: hidden;
+}
+
 
 
 /*
@@ -616,6 +743,145 @@ PRICING ↓
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.plans__title {
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+}
+
+.plans__heading {
+    width: 100%;
+    text-align: center;
+    font-size: 2.25rem;
+    font-weight: 900;
+    letter-spacing: 0.025em;
+}
+
+.plans__info {
+    width: 100%;
+    text-align: center;
+    margin-top: 1rem;
+    max-width: 36rem;
+    font-weight: 500;
+    line-height: 1.625;
+    color: rgb(124, 139, 161);
+}
+
+.plans__container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.plan__card {
+    position: relative;
+    margin-top: 4rem;
+    display: flex;
+    width: 100%;
+    max-width: 24rem;
+    flex-direction: column;
+    border-radius: 0.5rem;
+    background-color: rgb(255, 255, 255);
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 0.5rem;
+    text-align: center;
+    color: rgb(26, 32, 44);
+    --tw-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px 0 var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.plan__highlight {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    height: 0.5rem;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    background: linear-gradient(115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100%);
+}
+
+.plan__header {
+    display: flex;
+    flex-direction: column;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    text-transform: uppercase;
+    line-height: 1.625;
+}
+
+.name {
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.price {
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+    font-size: 2.25rem;
+    font-weight: 700;
+}
+
+.duration {
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+    color: rgb(160, 174, 192);
+}
+
+.plan__features {
+    margin-left: -2rem;
+    margin-right: -2rem;
+    display: flex;
+    flex: 1 1 0%;
+    flex-direction: column;
+    border-top-width: 2px;
+    border-bottom-width: 2px;
+    padding: 2rem;
+    border-color: rgb(203, 213, 224);
+    border-style: solid;
+    border-right: hidden;
+    border-left: hidden;
+}
+
+.feature__title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    letter-spacing: 0.025em;
+}
+
+.feature {
+    margin-top: 1.25rem;
+    font-weight: 500;
+    color: rgb(113, 128, 150);
+}
+
+.plans__button {
+    padding: 2rem 1rem;
+}
+
+.plan__button {
+    width: 100%;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+    border-radius: 9999px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    background: linear-gradient(115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100%);
+    font-weight: 700;
+    color: rgb(247, 250, 252);
+    transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
+    transition-duration: 300ms;
+    border-style: hidden;
 }
 
 /* 
